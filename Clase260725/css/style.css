@@ -1,3 +1,9 @@
-.importante {
-    color: red;
+:root{
+    --color-de-fondo: rgb(236, 37, 250);
+}
+
+
+.importante{
+    color: var(--color-de-fondo);
+    font-size: 50px;
 }
