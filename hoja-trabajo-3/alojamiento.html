@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alojamiento en Bruselas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Descubre Bruselas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="atracciones.html">Atracciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="alojamiento.html">Alojamiento</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-accommodation bg-light py-5 mt-5">
+        <div class="container text-center py-5">
+            <h1 class="display-4 fw-bold">Alojamiento en Bruselas</h1>
+            <p class="lead">Encuentra el lugar perfecto para tu estadía en la capital europea</p>
+        </div>
+    </header>
+
+    <!-- Accommodation Options -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Opciones de Alojamiento</h2>
+            
+            <div class="row g-4">
+                <!-- Hotel de Lujo -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="img/hotel-lujo.jpg" class="card-img-top" alt="Hotel de Lujo">
+                        <div class="card-body">
+                            <h5 class="card-title">Hoteles de Lujo</h5>
+                            <p class="card-text">Experimenta el máximo confort en los hoteles 5 estrellas de Bruselas, con servicios premium y ubicaciones céntricas.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#luxuryModal">Ver opciones</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hoteles Boutique -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="img/hotel-boutique.jpg" class="card-img-top" alt="Hotel Boutique">
+                        <div class="card-body">
+                            <h5 class="card-title">Hoteles Boutique</h5>
+                            <p class="card-text">Pequeños hoteles con encanto y diseño único, perfectos para una experiencia más personalizada.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#boutiqueModal">Ver opciones</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hostales -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="img/hostal.jpg" class="card-img-top" alt="Hostal">
+                        <div class="card-body">
+                            <h5 class="card-title">Hostales</h5>
+                            <p class="card-text">Opciones económicas para viajeros que buscan socializar y ahorrar en alojamiento.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hostelModal">Ver opciones</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Apartamentos -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <img src="img/apartamento.jpg" class="card-img-top" alt="Apartamento">
+                        <div class="card-body">
+                            <h5 class="card-title">Apartamentos Turísticos</h5>
+                            <p class="card-text">Ideal para familias o grupos que prefieren cocinar y tener más espacio durante su estadía.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#apartmentModal">Ver opciones</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- B&Bs -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <img src="img/bed-breakfast.jpg" class="card-img-top" alt="Bed & Breakfast">
+                        <div class="card-body">
+                            <h5 class="card-title">Bed & Breakfast</h5>
+                            <p class="card-text">Alojamientos familiares con desayuno incluido, para una experiencia más local y acogedora.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bbModal">Ver opciones</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodation by Area -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Alojamiento por Zonas</h2>
+            
+            <div class="accordion" id="areaAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCentro">
+                            Centro Histórico
+                        </button>
+                    </h2>
+                    <div id="collapseCentro" class="accordion-collapse collapse show" data-bs-parent="#areaAccordion">
+                        <div class="accordion-body">
+                            <p>El área más turística, cerca de la Grand Place, Manneken Pis y las principales atracciones. Ideal para quienes quieren estar en el corazón de la acción.</p>
+                            <ul>
+                                <li>Hotel Amigo (5 estrellas)</li>
+                                <li>Hotel Métropole (5 estrellas)</li>
+                                <li>B&B La Casa de los Sueños</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEuropeo">
+                            Barrio Europeo
+                        </button>
+                    </h2>
+                    <div id="collapseEuropeo" class="accordion-collapse collapse" data-bs-parent="#areaAccordion">
+                        <div class="accordion-body">
+                            <p>Zona moderna con muchas opciones de negocios, cerca de las instituciones de la UE. Buen transporte público.</p>
+                            <ul>
+                                <li>Thon Hotel EU (4 estrellas)</li>
+                                <li>Hotel Le Plaza (5 estrellas)</li>
+                                <li>Steigenberger Wiltcher's (5 estrellas)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIxelles">
+                            Ixelles
+                        </button>
+                    </h2>
+                    <div id="collapseIxelles" class="accordion-collapse collapse" data-bs-parent="#areaAccordion">
+                        <div class="accordion-body">
+                            <p>Barrio residencial con ambiente bohemio, cerca de la Universidad Libre de Bruselas. Muchos cafés y restaurantes.</p>
+                            <ul>
+                                <li>Hotel Le Chatelain (4 estrellas)</li>
+                                <li>B&B Maison Haute</li>
+                                <li>Hotel des Colonies (3 estrellas)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <h3 class="card-title text-center mb-4">Reserva tu Alojamiento</h3>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="checkin" class="form-label">Fecha de llegada</label>
+                                        <input type="date" class="form-control" id="checkin" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="checkout" class="form-label">Fecha de salida</label>
+                                        <input type="date" class="form-control" id="checkout" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="guests" class="form-label">Huéspedes</label>
+                                        <select class="form-select" id="guests">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5+">5+</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="roomType" class="form-label">Tipo de alojamiento</label>
+                                        <select class="form-select" id="roomType">
+                                            <option value="hotel">Hotel</option>
+                                            <option value="apartment">Apartamento</option>
+                                            <option value="hostel">Hostal</option>
+                                            <option value="bb">Bed & Breakfast</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary w-100">Buscar Disponibilidad</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for Accommodation -->
+    <div class="modal fade" id="luxuryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Hoteles de Lujo en Bruselas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Hotel Amigo</h6>
+                            <p>⭐️⭐️⭐️⭐️⭐️</p>
+                            <p>Ubicado a pocos pasos de la Grand Place, ofrece habitaciones elegantes con toques contemporáneos y servicio excepcional.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Rocco Forte Hotel</h6>
+                            <p>⭐️⭐️⭐️⭐️⭐️</p>
+                            <p>Un hotel boutique de lujo con spa, piscina cubierta y restaurante gourmet con estrella Michelin.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Similar modals for other accommodation types would go here -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">Página web desarrollada por Josue Sebastian Mancilla González - Carnet: 9490-22-1157 | © 2025 Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

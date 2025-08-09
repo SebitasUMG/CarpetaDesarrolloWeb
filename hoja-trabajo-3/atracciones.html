@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atracciones en Bruselas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Descubre Bruselas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="atracciones.html">Atracciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alojamiento.html">Alojamiento</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-attractions bg-light py-5 mt-5">
+        <div class="container text-center py-5">
+            <h1 class="display-4 fw-bold">Atracciones en Bruselas</h1>
+            <p class="lead">Descubre los lugares más emblemáticos de la capital europea</p>
+        </div>
+    </header>
+
+    <!-- Tabs Section -->
+    <section class="py-5">
+        <div class="container">
+            <ul class="nav nav-tabs" id="attractionsTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="historic-tab" data-bs-toggle="tab" data-bs-target="#historic" type="button">Históricas</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="cultural-tab" data-bs-toggle="tab" data-bs-target="#cultural" type="button">Culturales</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="modern-tab" data-bs-toggle="tab" data-bs-target="#modern" type="button">Modernas</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="gastronomic-tab" data-bs-toggle="tab" data-bs-target="#gastronomic" type="button">Gastronómicas</button>
+                </li>
+            </ul>
+            <div class="tab-content py-4" id="attractionsTabContent">
+                <div class="tab-pane fade show active" id="historic" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Grand Place</h3>
+                            <p>La plaza central de Bruselas, considerada una de las más bellas del mundo, rodeada de impresionantes edificios góticos y barrocos.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#grandPlaceModal">Ver más</button>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Manneken Pis</h3>
+                            <p>La pequeña estatua de bronce de un niño orinando es uno de los símbolos más famosos y queridos de Bruselas.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#mannekenPisModal">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="cultural" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Museos Reales de Bellas Artes</h3>
+                            <p>Alberga una extensa colección de pinturas, dibujos y esculturas que datan desde principios del siglo XV hasta la actualidad.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Museo del Cómic</h3>
+                            <p>Celebra la rica tradición del cómic belga, incluyendo personajes como Tintín y los Pitufos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="modern" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Atomium</h3>
+                            <p>Estructura monumental que representa un cristal de hierro ampliado 165 mil millones de veces, construida para la Expo 58.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Barrio Europeo</h3>
+                            <p>Sede de las principales instituciones de la Unión Europea, con arquitectura moderna e impresionante.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="gastronomic" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Ruta del Chocolate</h3>
+                            <p>Tour por las mejores chocolaterías artesanales de Bruselas, incluyendo degustaciones.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Experiencia Cervecera</h3>
+                            <p>Descubre la tradición cervecera belga con más de 300 variedades diferentes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Itinerario Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Itinerario de 3 días en Bruselas</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>Día</th>
+                            <th>Horario</th>
+                            <th>Actividad</th>
+                            <th>Lugar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Día 1</td>
+                            <td>09:00 - 12:00</td>
+                            <td>Tour por la Grand Place y alrededores</td>
+                            <td>Centro histórico</td>
+                        </tr>
+                        <tr>
+                            <td>Día 1</td>
+                            <td>12:30 - 14:00</td>
+                            <td>Almuerzo típico belga</td>
+                            <td>Restaurante local</td>
+                        </tr>
+                        <tr>
+                            <td>Día 1</td>
+                            <td>14:30 - 18:00</td>
+                            <td>Visita al Museo del Cómic y Manneken Pis</td>
+                            <td>Barrio de la Ilustración</td>
+                        </tr>
+                        <tr>
+                            <td>Día 2</td>
+                            <td>09:30 - 12:00</td>
+                            <td>Visita al Atomium y Mini-Europa</td>
+                            <td>Parque Heysel</td>
+                        </tr>
+                        <tr>
+                            <td>Día 2</td>
+                            <td>13:00 - 15:00</td>
+                            <td>Taller de chocolates belgas</td>
+                            <td>Chocolatería artesanal</td>
+                        </tr>
+                        <tr>
+                            <td>Día 2</td>
+                            <td>16:00 - 18:00</td>
+                            <td>Paseo por el Barrio Europeo</td>
+                            <td>Instituciones de la UE</td>
+                        </tr>
+                        <tr>
+                            <td>Día 3</td>
+                            <td>10:00 - 13:00</td>
+                            <td>Excursión a Brujas (opcional)</td>
+                            <td>Ciudad de Brujas</td>
+                        </tr>
+                        <tr>
+                            <td>Día 3</td>
+                            <td>15:00 - 17:00</td>
+                            <td>Compras y tiempo libre</td>
+                            <td>Galeries Royales Saint-Hubert</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for Attractions -->
+    <div class="modal fade" id="grandPlaceModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Grand Place</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Bruselas1.jpg" class="img-fluid mb-3" alt="Grand Place">
+                    <p>La Grand Place es la plaza central de Bruselas. Rodeada por las casas de los gremios, el ayuntamiento y la Casa del Rey, es considerada una de las plazas más bellas del mundo. En 1998 fue inscrita en la lista del Patrimonio de la Humanidad de la UNESCO.</p>
+                    <p>La plaza es el lugar de numerosos eventos y festividades, incluyendo el famoso Tapiz de Flores que se celebra cada dos años en agosto.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="mannekenPisModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Manneken Pis</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Bruselas3.jpg" class="img-fluid mb-3" alt="Manneken Pis">
+                    <p>El Manneken Pis es una pequeña estatua de bronce de unos 50 cm que representa a un niño desnudo orinando en la pila de una fuente. Data de 1619 y es uno de los símbolos más famosos de Bruselas.</p>
+                    <p>La estatua es vestida regularmente con diferentes trajes según un calendario establecido, y su guardarropa cuenta con más de 900 trajes diferentes que se conservan en el Museo de la Ciudad.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">Página web desarrollada por Josue Sebastian Mancilla González - Carnet: 9490-22-1157 | © 2025 Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

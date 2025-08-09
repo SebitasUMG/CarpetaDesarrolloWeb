@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubre Bruselas - La Capital de Europa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Descubre Bruselas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="atracciones.html">Atracciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alojamiento.html">Alojamiento</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero bg-light py-5 mt-5">
+        <div class="container text-center py-5">
+            <h1 class="display-4 fw-bold">Descubre Bruselas</h1>
+            <p class="lead">La capital de Bélgica y corazón de Europa</p>
+            <a href="#descripcion" class="btn btn-primary btn-lg mt-3">Explorar</a>
+        </div>
+    </header>
+
+    <!-- Descripción Section -->
+    <section id="descripcion" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Bruselas: Donde la tradición se encuentra con la modernidad</h2>
+                    <p class="lead">Bruselas, la capital de Bélgica y sede principal de la Unión Europea, es una ciudad fascinante que combina historia medieval con arquitectura moderna.</p>
+                    <p>Conocida por sus exquisitos chocolates, cervezas artesanales y los famosos waffles, Bruselas ofrece una experiencia cultural y gastronómica única.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/Bruselas1.jpg" alt="Grand Place de Bruselas" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Galería de Bruselas</h2>
+            <div id="bruselasCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active">
+                        <img src="img/Bruselas1.jpg" class="d-block w-100" alt="Grand Place de noche iluminada">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Bruselas2.jpg" class="d-block w-100" alt="Vista del Atomium">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Bruselas3.jpg" class="d-block w-100" alt="Estatua del Manneken Pis">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Bruselas4.jpg" class="d-block w-100" alt="Palacio Real de Bruselas">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#bruselasCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#bruselasCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Trigger -->
+    <section class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4">¿Listo para tu aventura en Bruselas?</h2>
+            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactoModal">
+                Contactar Guía Turístico
+            </button>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="contactoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contactar Guía Turístico</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fecha" class="form-label">Fecha de visita</label>
+                            <input type="date" class="form-control" id="fecha">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">Página web desarrollada por Josue Sebastian Mancilla González - Carnet: 9490-22-1157 | © 2025 Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
