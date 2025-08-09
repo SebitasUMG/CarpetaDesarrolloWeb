@@ -1,0 +1,18 @@
+.box{
+    background-color: #0f0;
+    height: 50px;
+    width: 50px;
+    padding: 50px 10px 30px 5px;
+    border: solid rgb(0, 81, 255);
+    /* margin: 10px 30px 2px 60px; */
+    position: relative;
+    float: left;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
